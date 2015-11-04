@@ -27,6 +27,7 @@ Flixter::Application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
+  # Changed to DO fallback false to true
   config.assets.compile = true
 
   # Generate digests for assets URLs.
