@@ -16,7 +16,7 @@
   <![endif]-->
 </head>
 <body>
-  <div id="wrap>"  
+  <main id="wrap"> 
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -56,17 +56,17 @@
     
     <%= yield %>
 
-  </div>
+  </main>
   
-  <br class="clr" />
+  <br class="clearfix" />
 
-  <div id="footer">
+  <footer id="footer">
     <section class="container">
-      <em>Footer here</em>
+      <em>Teachers</em>
       <br>
-      <%= link_to 'Link', '#' %>
+      <%= link_to 'Teach a Course', new_instructor_course_path %>
     </section>
-  </div>  
+  </footer>  
 
 </body>
 </html>
