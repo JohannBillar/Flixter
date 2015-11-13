@@ -7,7 +7,7 @@ before_action :require_authorized_for_current_course
 	end
 
 	def create
-		@section = @course.sections.create(section_params)
+		@section = current_course.sections.create(section_params)
 		redirect_to instructor_course_path(current_course)
 	end
 
