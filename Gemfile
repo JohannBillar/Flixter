@@ -44,6 +44,9 @@ end
 # Include factory girl
 gem 'factory_girl_rails', '~> 4.0'
 
+# Include carrierwave image upload
+gem 'carrierwave'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
