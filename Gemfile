@@ -47,6 +47,12 @@ gem 'factory_girl_rails', '~> 4.0'
 # Include carrierwave image upload
 gem 'carrierwave'
 
+# Manage keys
+gem 'figaro'
+
+# Lets carrierwave play with amazon S3
+gem 'fog', '~> 1.3.1'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
