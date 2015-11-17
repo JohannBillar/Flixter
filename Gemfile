@@ -53,6 +53,9 @@ gem 'figaro'
 # Lets carrierwave play with amazon S3
 gem 'fog', '~> 1.3.1'
 
+# resize images
+gem 'mini_magick', '~> 4.3.1'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
