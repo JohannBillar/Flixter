@@ -2,41 +2,47 @@
 
 <section class="booyah-box col-xs-10 col-xs-offset-1">
   <h1><%= @course.title %></h1>
-    <%= image_tag @course.image, :class => 'img-responsive' %>
+  <%= image_tag @course.image, :class => 'img-responsive' %>
   <br>
-	<br>
-
+  <br>
   <div class="col-sm-4 col-xs-12 text-center">
   	<span class="label label-default">
   		<%= number_to_currency @course.cost %>
   	</span>	
-		
+
     <% if current_user && current_user == @course.user %>
-  		<br>
-  		<br>
-			<%= link_to 'Administer', instructor_course_path(@course), :class => 'btn btn-danger btn-large' %>
-  	<% end %>
+    <br>
+    <br>
+    <%= link_to 'Administer', instructor_course_path(@course), :class => 'btn btn-danger btn-large' %>
+    <% end %>
   </div>
 
   <div class="col-sm-8 col-xs-12">
   	<%= @course.description %>
   </div>
 
-  <div>
+  <div class="col-xs-12">
     <% @course.sections.each do |section| %>
+      <br><br>
       <div class="section">
-        <%= section.title %>
+        <h3>
+          <%= section.title %>
+        </h3>
         <% section.lessons.each do |lesson| %>
-          <div class="lesson">
-            <%= link_to lesson_path(lesson) do %>
-              <strong><%= lesson.title %></strong>
-              -
-              <%= lesson.subtitle %>
-            <% end %>
-          </div>  
+          <div class="col-xs-12 col-sm-6">
+            <div class="lesson text-center">
+              <br>
+              <%= link_to lesson_path(lesson) do %>
+                <strong><%= lesson.title %></strong>
+                <br>
+                <%= lesson.subtitle %>
+              <% end %>
+            </div>
+          </div>
         <% end %>
-      </div>  
+        <br class="clr">
+      </div>
     <% end %>
   </div>
-  
+
 </section>
