@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryGirl.define do  
 
 	factory :user do
 		sequence :email do |n|
@@ -7,13 +7,11 @@ FactoryGirl.define do
 		password "Rallib1975"
 	end
 
-	FactoryGirl.define do
-  	factory :course do
-    	title "Factory girl course"
-    	description "Try the course"
-    	cost "100"
-    	association :user
-  	end
+  factory :course do
+    title "Factory girl course"
+    description "Try the course"
+    cost "100"
+    association :user
 	end
 
 end
