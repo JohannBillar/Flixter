@@ -57,6 +57,9 @@ gem 'carrierwave-aws'
 # resize images
 gem 'mini_magick', '~> 4.3.1'
 
+# Payments with strip
+gem 'stripe'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
