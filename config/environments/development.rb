@@ -27,5 +27,6 @@ Flixter::Application.configure do
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
+  # Set to false to speed things up.
   config.assets.debug = false
 end
