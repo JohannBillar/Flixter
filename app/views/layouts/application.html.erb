@@ -67,9 +67,43 @@
 
   <footer id="footer">
     <section class="container">
-      <em>Teachers</em>
-      <br>
-      <%= link_to 'Teach a Course', new_instructor_course_path %>
+      <div class="col-xs-12 col-sm-3">  
+        <strong>Teachers</strong>
+        <br>
+        <%= link_to 'Teach a course', new_instructor_course_path %>
+        <br>
+        <%= link_to 'My dashboard', dashboard_path %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <strong>About</strong>
+        <br>
+        <%= link_to 'Team', '#' %>
+        <br>
+        <%= link_to 'Careers', '#' %>
+        <br>
+        <%= link_to 'Privacy policy', '#' %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <strong>Contact</strong>
+        <br>
+        jwbillar@gmail.com
+        <br>
+        San Diego, California
+      </div> 
+      <div class="col-xs-12 col-sm-3 social">
+        <strong>Social</strong>
+        <br>
+        <br>
+        <%= link_to 'https://github.com/JohannBillar' do %>
+          <%= image_tag 'github.png', :class => 'social-button' %>
+        <% end %>
+        <%= link_to 'https://plus.google.com/u/0/+JohannBillar/' do %>
+          <%= image_tag 'google.png', :class => 'social-button' %>
+        <% end %>
+        <%= link_to 'http://www.linkedin.com/in/johannbillar' do %>  
+          <%= image_tag 'linkedin.png', :class => 'social-button' %>
+        <% end %>  
+      </div> 
     </section>
   </footer>  
 
